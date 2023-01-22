@@ -1,6 +1,21 @@
+/* html{
+    background: radial-gradient(farthest-corner at right top,#d8fffe, #06182D);
+} */
+
 body{
-    background-color: #000;
-    color: #fff;
+    color: rgb(226, 226, 226);
+    /* background: radial-gradient(farthest-corner at right top,#657776, #06182D); */
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.2)), to(rgba(0,0,0,1))) fixed;
+    background-repeat: no-repeat;
+    
+}
+
+.main{
+    padding: 1rem;
+    margin: 1rem;
+    border: 1px solid #fff;
+    border-radius: 10px;
+   
 }
 
 .header__container{
@@ -10,11 +25,13 @@ body{
 }
 
 .photo{
-    height: 238px;
-    width: 238px;
+    height: 218px;
+    width: 218px;
     margin-top: 3rem;
     border-radius: 50%;
-    
+    opacity: 90%;
+    -webkit-box-shadow: 5px 5px 37px 17px #000000; 
+    box-shadow: 5px 5px 37px 17px #000000;
 }
 
 .header__title{
@@ -25,8 +42,45 @@ body{
     font-size: 1.5rem;
 }
 
+.information{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+}
 
+.information p{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: .6rem;
+    font-family: 'Open Sans', sans-serif;
+}
 
+.information p::before{
+    display: inline-block;
+    content: '';
+    width: 1rem;
+    height: 1rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: .5rem;
+}
+.information .job::before{
+    background-image: url(../img/Group.svg)
+}
+
+.information .location::before{
+    background-image: url(../img/local.svg)
+}
+
+.information .phone::before{
+    background-image: url(../img/wp.svg)
+}
+
+.information .email::before{
+    background-image: url(../img/email.svg)
+}
 
 
 
