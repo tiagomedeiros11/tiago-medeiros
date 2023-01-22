@@ -1,10 +1,6 @@
-/* html{
-    background: radial-gradient(farthest-corner at right top,#d8fffe, #06182D);
-} */
 
 body{
     color: rgb(226, 226, 226);
-    /* background: radial-gradient(farthest-corner at right top,#657776, #06182D); */
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.2)), to(rgba(0,0,0,1))) fixed;
     background-repeat: no-repeat;
     
