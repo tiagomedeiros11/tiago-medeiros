@@ -1,0 +1,110 @@
+
+body{
+    color: rgb(226, 226, 226);
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.2)), to(rgba(0,0,0,1))) fixed;
+    background-repeat: no-repeat;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+.main{
+    padding: 1rem;
+    margin: 1rem;
+    border: 1px solid #fff;
+    border-radius: 10px;
+   
+}
+
+.header__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.photo{
+    height: 218px;
+    width: 218px;
+    margin-top: 3rem;
+    border-radius: 50%;
+    opacity: 90%;
+    -webkit-box-shadow: 5px 5px 37px 17px #000000; 
+    box-shadow: 5px 5px 37px 17px #000000;
+}
+
+.header__title{
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    text-align: center;
+    padding: 2rem;
+    font-size: 1.7rem;
+}
+
+.information{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    font-size: 1.3rem;
+}
+
+.information p{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: .6rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.information p::before{
+    display: inline-block;
+    content: '';
+    width: 1rem;
+    height: 1rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: .5rem;
+}
+.information .job::before{
+    background-image: url(../img/Group.svg)
+}
+
+.information .location::before{
+    background-image: url(../img/local.svg)
+}
+
+.information .phone::before{
+    background-image: url(../img/wp.svg)
+}
+
+.information .email::before{
+    background-image: url(../img/email.svg)
+}
+
+@media screen and (min-width: 768px){
+    .main{
+        max-width: 980px;
+        margin: 10px auto;
+    }
+    
+    .header__container{
+        display: grid;
+        grid-template-areas: 
+        'photo title information'
+        'photo title information'  ;
+    }
+    .photo{
+        margin-top: 0;
+        grid-area: photo;
+    } 
+    .header__title{
+        grid-area: title ;
+    }
+    .information{
+        grid-area: information;
+    }
+}
+
+
+
+@import './fonts.css';
+ 
