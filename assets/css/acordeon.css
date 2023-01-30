@@ -55,10 +55,14 @@
 }
 
 .acordeon .acordeon-content{
-    display: none;
+    overflow: hidden;
+    max-height: 0;
+    transition: all .4s linear;
 }
 .acordeon.open .acordeon-content{
-    display: block;
+    height: auto;
+    max-height: 500px;
+    transform: all;
     color: black;
 }
 
