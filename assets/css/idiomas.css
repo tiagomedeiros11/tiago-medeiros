@@ -1,0 +1,19 @@
+
+.idiomas{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.idiomas li{
+    padding: 1.5rem;
+    font-weight: 600;
+}
+
+.idiomas li img{
+    width: .8rem;
+    height: .8rem;
+}
