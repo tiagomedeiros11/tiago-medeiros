@@ -62,7 +62,7 @@
 }
 .acordeon.open .acordeon-content{
     height: auto;
-    max-height: 500px;
+    max-height: 1000px;
     transform: all;
     color: black;
 }

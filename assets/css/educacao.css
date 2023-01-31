@@ -1,0 +1,42 @@
+.educacao{
+    display: flex;
+    flex-direction: column;
+}
+
+.educacao-texto{
+    text-align: center;
+}
+
+
+
+.educacao-images{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.educacao-images img{
+    max-width: 5rem;
+}
+
+.educacao-cursos{
+    display: flex;
+   
+}
+.educacao-cursos ul{
+    list-style: none;
+    padding: 1.5rem;
+    margin: 0;
+    line-height: 1;
+}
+
+.educacao-cursos h3{
+   margin: 1rem 0 0 0;
+    padding: 0;
+}
+
+.educacao-cursos p{
+    margin:0;
+
+    padding: 0;
+}
